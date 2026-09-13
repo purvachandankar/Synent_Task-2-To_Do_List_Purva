@@ -1,0 +1,226 @@
+# TASK 2 – TO-DO LIST APPLICATION
+
+## 1. Introduction
+
+The To-Do List Application is a simple command-line application developed using Python. The purpose of this application is to help users manage their daily tasks by providing basic operations such as adding, deleting, and viewing tasks.
+The application uses a Python list to store tasks temporarily and provides a menu-driven interface through which the user can select different operations. This project was developed as part of the Python Programming Internship at CodeAlpha.
+
+## 2. Objective
+
+The main objectives of developing the To-Do List Application are:
+
+* To create a simple task management application using Python.
+* To allow users to add new tasks to a list.
+* To allow users to delete existing tasks.
+* To display all the tasks stored in the application.
+* To understand the practical use of lists, loops, conditional statements, and user input in Python.
+* To improve logical thinking and problem-solving skills through application development.
+
+## 3. Technologies Used
+
+### Programming Language
+
+* Python
+
+### Concepts Used
+
+* Lists
+* Functions
+* While Loop
+* If-elif-else Statements
+* User Input and Output
+* `append()` method
+* `remove()` method
+* `enumerate()` function
+* Conditional checking
+
+### Application Type
+
+* Command-Line Interface (CLI)
+
+## 4. Features of the Application
+
+The To-Do List Application provides the following features:
+
+### 4.1 Add Task
+
+The user can enter a new task, which is added to the task list using Python's `append()` method.
+
+### 4.2 Delete Task
+
+The user can enter the name of a task that they want to remove. The application checks whether the task exists before deleting it.
+
+### 4.3 View Tasks
+
+The application displays all the tasks currently stored in the list. Each task is displayed with a number using the `enumerate()` function.
+
+### 4.4 Exit
+
+The user can select the Exit option to terminate the application.
+
+### 4.5 Invalid Choice Handling
+
+If the user enters an option other than the available menu choices, the application displays an invalid choice message.
+
+## 5. Working of the Application
+
+The application starts by creating an empty list called `tasks`.
+A menu is displayed to the user with four options:
+
+1. Add Task
+2. Delete Task
+3. View Task
+4. Exit
+
+The user selects an option by entering the corresponding number.
+
+### Add Task
+
+When the user selects option 1, the application asks the user to enter a task. The entered task is then stored in the `tasks` list.
+
+### Delete Task
+
+When option 2 is selected, the application asks the user to enter the task they want to delete. The program checks whether the task exists in the list. If it exists, it is removed; otherwise, the program displays "Task not found."
+
+### View Task
+
+When option 3 is selected, the application checks whether the task list is empty. If there are no tasks, it displays a message indicating that no task is available.
+
+If tasks are present, they are displayed with their respective numbers.
+
+### Exit
+
+When option 4 is selected, the application displays an exit message and terminates the program using the `break` statement.
+
+## 6. Implementation Steps
+
+The following steps were followed to develop the application:
+
+1. Created a function named `task()`.
+2. Created an empty list named `tasks` to store the tasks.
+3. Used a `while True` loop to continuously display the menu.
+4. Created four menu options: Add, Delete, View, and Exit.
+5. Used the `input()` function to accept the user's choice.
+6. Used `append()` to add a new task.
+7. Used `remove()` to delete an existing task.
+8. Used `enumerate()` to display tasks with numbering.
+9. Added a condition to check whether the task list is empty.
+10. Used `if-elif-else` statements to perform different operations.
+11. Used `break` to exit the application.
+12. Added handling for invalid menu choices.
+
+## 7. Python Concepts Used
+
+### 7.1 List
+
+A list is used to store multiple tasks.
+
+Example:
+
+tasks = []
+
+### 7.2 append()
+
+The `append()` method adds a new task to the list.
+tasks.append(task)
+
+### 7.3 remove()
+
+The `remove()` method removes a particular task from the list.
+tasks.remove(task_deleted)
+
+### 7.4 While Loop
+
+A `while` loop keeps the application running until the user chooses the Exit option.
+while True:
+
+### 7.5 If-elif-else
+
+Conditional statements are used to identify the user's selected menu option.
+if choice == "1":
+
+### 7.6 enumerate()
+
+The `enumerate()` function is used to display the tasks along with their numbers.
+for i, t in enumerate(tasks, start=1):
+
+### 7.7 Functions
+
+The complete To-Do List functionality is placed inside the `task()` function.
+def task():
+
+## 8. Sample Output
+
+1.Add Task
+2.Delete Task
+3.View Task
+4.Exit
+
+Enter your choice: 1
+
+Enter the task: Complete Python Assignment
+
+....Task added successfully.....
+
+1.Add Task
+2.Delete Task
+3.View Task
+4.Exit
+
+Enter your choice: 3
+
+Task are
+
+1 Complete Python Assignment
+
+For deleting a task:
+
+Enter your choice: 2
+
+Enter the task you want to delete: Complete Python Assignment
+
+...Complete Python Assignment Task is deleted...
+
+When no task is available:
+
+Enter your choice: 3
+
+No task is mentioned
+
+## 9. Advantages
+
+* Simple and easy-to-use interface.
+* Easy to understand and implement.
+* Provides basic task management functionality.
+* Demonstrates practical use of Python programming concepts.
+* Suitable for beginners learning Python.
+* Provides immediate feedback to the user.
+
+## 10. Limitations
+
+* Tasks are stored only temporarily in a Python list.
+* Tasks are lost when the program is closed.
+* The application does not use a database or permanent file storage.
+* It does not provide task deadlines or priority levels.
+* Tasks must be entered using the command line.
+
+## 11. Future Enhancements
+
+The application can be improved by adding:
+* File or database storage for permanent task saving.
+* Task priorities such as High, Medium, and Low.
+* Due dates and reminders.
+* Task completion status.
+* Graphical User Interface (GUI).
+* Search and edit functionality.
+* SQLite or MySQL database integration.
+
+## 12. Outcome
+
+The To-Do List Application provided practical experience in developing a menu-driven Python application. Through this task, concepts such as lists, functions, loops, conditional statements, user input, and list operations were implemented in a real-world application.
+The project also helped improve programming logic, problem-solving ability, and understanding of how basic Python concepts can be combined to create a functional application.
+
+## 13. Conclusion
+
+The To-Do List Application was successfully developed using Python as a command-line application. It allows users to add, delete, and view tasks through a simple menu-driven interface.
+The project successfully demonstrated the practical implementation of fundamental Python programming concepts and provided hands-on experience in developing a user-driven application. This task contributed to strengthening Python programming and problem-solving skills as part of the internship experience.
